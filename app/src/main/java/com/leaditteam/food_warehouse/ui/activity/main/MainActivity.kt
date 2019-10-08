@@ -21,9 +21,9 @@ class MainActivity : AppCompatActivity(), KodeinAware {
         setContentView(R.layout.activity_main)
 
         val binding: ActivityMainBinding =
-            DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
-                .apply {
-                    mainViewModel = viewModel
+                    DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+                        .apply {
+                            mainViewModel = viewModel
                 }
         /*binding.lifecycleOwner = this*/
 
